@@ -1,4 +1,4 @@
-import { ArrowRight, Gamepad2, Star, Users } from "lucide-react";
+import { ArrowRight, Palette, Star, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-bg.jpg";
 
@@ -20,33 +20,33 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto text-center space-y-8">
           {/* Badge */}
           <div className="inline-flex items-center space-x-2 bg-gradient-primary rounded-full px-6 py-2 text-primary-foreground">
-            <Gamepad2 className="h-4 w-4" />
-            <span className="text-sm font-medium">Quest Complete: Full-Stack Blog</span>
+            <Palette className="h-4 w-4" />
+            <span className="text-sm font-medium">Gallery of Creative Minds</span>
           </div>
 
           {/* Main Heading */}
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-heading font-bold leading-tight">
-            Level Up Your
+            Unleash Your
             <br />
             <span className="bg-gradient-hero bg-clip-text text-transparent glow-text">
-              Coding Journey
+              Creative Vision
             </span>
           </h1>
 
           {/* Description */}
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Join thousands of developers sharing knowledge, tutorials, and epic coding adventures. 
-            Create, share, and discover amazing content in our gaming-inspired developer community.
+            Join thousands of artists sharing techniques, inspiration, and creative masterpieces. 
+            Create, share, and discover amazing content in our vibrant artistic community.
           </p>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Button variant="hero" size="lg" className="text-lg px-8 py-6 h-auto">
-              Start Your Quest
+              Start Creating
               <ArrowRight className="h-5 w-5" />
             </Button>
             <Button variant="outline" size="lg" className="text-lg px-8 py-6 h-auto">
-              Explore Posts
+              Explore Gallery
             </Button>
           </div>
 
@@ -57,21 +57,21 @@ const Hero = () => {
                 <Star className="h-6 w-6 text-accent" />
                 <span>1.2k</span>
               </div>
-              <p className="text-sm text-muted-foreground">Epic Posts</p>
+              <p className="text-sm text-muted-foreground">Masterpieces</p>
             </div>
             <div className="text-center">
               <div className="flex items-center justify-center space-x-1 text-2xl md:text-3xl font-heading font-bold text-primary">
                 <Users className="h-6 w-6 text-accent" />
                 <span>5.7k</span>
               </div>
-              <p className="text-sm text-muted-foreground">Developers</p>
+              <p className="text-sm text-muted-foreground">Artists</p>
             </div>
             <div className="text-center">
               <div className="flex items-center justify-center space-x-1 text-2xl md:text-3xl font-heading font-bold text-primary">
-                <Gamepad2 className="h-6 w-6 text-accent" />
+                <Palette className="h-6 w-6 text-accent" />
                 <span>250</span>
               </div>
-              <p className="text-sm text-muted-foreground">Categories</p>
+              <p className="text-sm text-muted-foreground">Art Forms</p>
             </div>
           </div>
         </div>

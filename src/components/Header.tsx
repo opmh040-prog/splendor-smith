@@ -1,4 +1,4 @@
-import { Search, Menu, PenTool, BookOpen, Trophy } from "lucide-react";
+import { Search, Menu, PenTool, BookOpen, Palette } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 
@@ -11,13 +11,13 @@ const Header = () => {
           <div className="flex items-center space-x-4">
             <div className="flex items-center space-x-2">
               <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-primary">
-                <Trophy className="h-5 w-5 text-primary-foreground" />
+                <Palette className="h-5 w-5 text-primary-foreground" />
               </div>
               <div className="flex flex-col">
                 <h1 className="text-xl font-heading font-bold bg-gradient-primary bg-clip-text text-transparent">
-                  GameBlog
+                  ArtBlog
                 </h1>
-                <span className="text-xs text-muted-foreground">Quest Complete</span>
+                <span className="text-xs text-muted-foreground">Create & Inspire</span>
               </div>
             </div>
           </div>
@@ -53,9 +53,9 @@ const Header = () => {
               Read
             </Button>
             
-            <Button variant="gaming" size="sm">
+            <Button variant="default" size="sm">
               <PenTool className="h-4 w-4" />
-              Write
+              Create
             </Button>
 
             {/* Mobile Menu */}

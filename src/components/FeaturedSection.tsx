@@ -1,43 +1,43 @@
-import { Zap, TrendingUp, Award } from "lucide-react";
+import { Paintbrush, TrendingUp, Award } from "lucide-react";
 import BlogCard from "./BlogCard";
 
 // Mock data for featured posts
 const featuredPosts = [
   {
     id: "1",
-    title: "Building a Real-Time Chat App with React and Socket.io",
-    excerpt: "Learn how to create an epic multiplayer chat experience with real-time messaging, user authentication, and gaming-style features.",
-    author: "CodeMaster",
+    title: "Mastering Digital Watercolor Techniques",
+    excerpt: "Discover the secrets of creating stunning digital watercolor paintings with professional techniques and artistic insights.",
+    author: "ArtMaestro",
     publishDate: "2024-01-15",
     readTime: "8 min read",
-    category: "React",
-    imageUrl: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=400&h=200&fit=crop",
+    category: "Digital Art",
+    imageUrl: "https://images.unsplash.com/photo-1541961017774-22349e4a1262?w=400&h=200&fit=crop",
     likes: 234,
     comments: 45,
     featured: true
   },
   {
     id: "2",
-    title: "Mastering TypeScript: Advanced Patterns for Game Development",
-    excerpt: "Dive deep into TypeScript's advanced features to build robust game engines and interactive applications with perfect type safety.",
-    author: "TypeScript Hero",
+    title: "Portrait Drawing: Capturing Human Expression",
+    excerpt: "Learn advanced portrait techniques to capture emotion and personality in your drawings with masterful precision.",
+    author: "PortraitPro",
     publishDate: "2024-01-12",
     readTime: "12 min read",
-    category: "TypeScript",
-    imageUrl: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=200&fit=crop",
+    category: "Drawing",
+    imageUrl: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=200&fit=crop",
     likes: 189,
     comments: 32,
     featured: true
   },
   {
     id: "3",
-    title: "CSS Grid: Creating Epic Game Layouts",
-    excerpt: "Master CSS Grid to create stunning game interfaces, responsive dashboards, and pixel-perfect layouts that wow your users.",
-    author: "LayoutLegend",
+    title: "Color Theory: Creating Harmonious Palettes",
+    excerpt: "Master the art of color selection and create breathtaking compositions that evoke emotion and capture attention.",
+    author: "ColorVirtuoso",
     publishDate: "2024-01-10",
     readTime: "6 min read",
-    category: "CSS",
-    imageUrl: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=200&fit=crop",
+    category: "Theory",
+    imageUrl: "https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?w=400&h=200&fit=crop",
     likes: 156,
     comments: 28
   }
@@ -50,20 +50,20 @@ const FeaturedSection = () => {
         {/* Section Header */}
         <div className="text-center space-y-4 mb-12">
           <div className="inline-flex items-center space-x-2 bg-gradient-accent rounded-full px-4 py-2 text-accent-foreground">
-            <Zap className="h-4 w-4" />
-            <span className="text-sm font-medium">Epic Content</span>
+            <Paintbrush className="h-4 w-4" />
+            <span className="text-sm font-medium">Featured Art</span>
           </div>
           
           <h2 className="text-3xl md:text-4xl font-heading font-bold">
-            Featured
+            Curated
             <span className="bg-gradient-primary bg-clip-text text-transparent ml-3">
-              Quests
+              Masterpieces
             </span>
           </h2>
           
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Handpicked tutorials and guides from our community's finest developers. 
-            Level up your skills with these legendary posts.
+            Handpicked tutorials and inspiration from our community's finest artists. 
+            Elevate your artistry with these inspiring creations.
           </p>
         </div>
 
@@ -90,7 +90,7 @@ const FeaturedSection = () => {
                 <TrendingUp className="h-8 w-8 text-accent" />
               </div>
               <h3 className="text-2xl font-heading font-bold text-primary">1.2M+</h3>
-              <p className="text-muted-foreground">Code Lines Written</p>
+              <p className="text-muted-foreground">Artworks Created</p>
             </div>
             
             <div className="space-y-2">
@@ -98,15 +98,15 @@ const FeaturedSection = () => {
                 <Award className="h-8 w-8 text-accent" />
               </div>
               <h3 className="text-2xl font-heading font-bold text-primary">500+</h3>
-              <p className="text-muted-foreground">Achievements Unlocked</p>
+              <p className="text-muted-foreground">Awards Won</p>
             </div>
             
             <div className="space-y-2">
               <div className="flex items-center justify-center">
-                <Zap className="h-8 w-8 text-accent" />
+                <Paintbrush className="h-8 w-8 text-accent" />
               </div>
               <h3 className="text-2xl font-heading font-bold text-primary">99.9%</h3>
-              <p className="text-muted-foreground">Epic Success Rate</p>
+              <p className="text-muted-foreground">Inspiration Rate</p>
             </div>
           </div>
         </div>

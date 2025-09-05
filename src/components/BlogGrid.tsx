@@ -6,79 +6,79 @@ import BlogCard from "./BlogCard";
 const recentPosts = [
   {
     id: "4",
-    title: "Node.js Performance Optimization: Boss Fight Edition",
-    excerpt: "Defeat slow APIs and laggy responses with these powerful Node.js optimization techniques that will make your backend lightning fast.",
-    author: "NodeNinja",
+    title: "Oil Painting Techniques: Creating Texture and Depth",
+    excerpt: "Master traditional oil painting methods to create rich textures and stunning depth in your artistic compositions.",
+    author: "OilMaster",
     publishDate: "2024-01-08",
     readTime: "10 min read",
-    category: "Node.js",
-    imageUrl: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=400&h=200&fit=crop",
+    category: "Oil Painting",
+    imageUrl: "https://images.unsplash.com/photo-1578321272176-b7bbc0679853?w=400&h=200&fit=crop",
     likes: 142,
     comments: 23
   },
   {
     id: "5",
-    title: "React Hooks: Mastering the Magic System",
-    excerpt: "Unlock the full potential of React Hooks with advanced patterns, custom hooks, and pro tips that will transform your component game.",
-    author: "HookWizard",
+    title: "Abstract Art: Expressing Emotion Through Form",
+    excerpt: "Discover how to convey powerful emotions and concepts through abstract compositions and experimental techniques.",
+    author: "AbstractArtist",
     publishDate: "2024-01-05",
     readTime: "7 min read",
-    category: "React",
-    imageUrl: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=400&h=200&fit=crop",
+    category: "Abstract",
+    imageUrl: "https://images.unsplash.com/photo-1541961017774-22349e4a1262?w=400&h=200&fit=crop",
     likes: 198,
     comments: 41
   },
   {
     id: "6",
-    title: "GraphQL Quest: Building Epic APIs",
-    excerpt: "Embark on a journey to create powerful, flexible APIs with GraphQL that will revolutionize how your frontend and backend communicate.",
-    author: "GraphQLGuru",
+    title: "Sculpture Fundamentals: From Clay to Bronze",
+    excerpt: "Explore the journey from initial clay models to finished bronze sculptures with professional casting techniques.",
+    author: "SculptureStudio",
     publishDate: "2024-01-03",
     readTime: "15 min read",
-    category: "GraphQL",
-    imageUrl: "https://images.unsplash.com/photo-1517180102446-f3ece451e9d8?w=400&h=200&fit=crop",
+    category: "Sculpture",
+    imageUrl: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=200&fit=crop",
     likes: 167,
     comments: 29
   },
   {
     id: "7",
-    title: "Docker Containerization: Deploy Like a Pro",
-    excerpt: "Master Docker containers and deployment strategies to ship your applications with confidence and scale like the pros.",
-    author: "DockerDev",
+    title: "Photography as Art: Composition and Light",
+    excerpt: "Learn to transform ordinary scenes into extraordinary artistic statements through masterful composition and lighting.",
+    author: "PhotoArtist",
     publishDate: "2024-01-01",
     readTime: "9 min read",
-    category: "DevOps",
-    imageUrl: "https://images.unsplash.com/photo-1605792657660-596af9009e82?w=400&h=200&fit=crop",
+    category: "Photography",
+    imageUrl: "https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?w=400&h=200&fit=crop",
     likes: 134,
     comments: 18
   },
   {
     id: "8",
-    title: "Vue.js 3 Composition API: The Ultimate Guide",
-    excerpt: "Discover the power of Vue 3's Composition API and learn how to build more maintainable and powerful applications.",
-    author: "VueVanguard",
+    title: "Mixed Media Art: Breaking Creative Boundaries",
+    excerpt: "Explore the limitless possibilities of combining different materials and techniques in innovative mixed media artworks.",
+    author: "MixedMediaMaven",
     publishDate: "2023-12-28",
     readTime: "11 min read",
-    category: "Vue.js",
-    imageUrl: "https://images.unsplash.com/photo-1593720213428-28a5b9e94613?w=400&h=200&fit=crop",
+    category: "Mixed Media",
+    imageUrl: "https://images.unsplash.com/photo-1541961017774-22349e4a1262?w=400&h=200&fit=crop",
     likes: 176,
     comments: 35
   },
   {
     id: "9",
-    title: "Tailwind CSS: Crafting Beautiful UIs",
-    excerpt: "Level up your styling game with Tailwind CSS and create stunning, responsive interfaces that users will love.",
-    author: "StyleSorcerer",
+    title: "Printmaking: Traditional Techniques for Modern Artists",
+    excerpt: "Discover the timeless appeal of printmaking and how contemporary artists are reimagining these classical methods.",
+    author: "PrintMaster",
     publishDate: "2023-12-25",
     readTime: "6 min read",
-    category: "CSS",
-    imageUrl: "https://images.unsplash.com/photo-1545235617-9465d2a55698?w=400&h=200&fit=crop",
+    category: "Printmaking",
+    imageUrl: "https://images.unsplash.com/photo-1578321272176-b7bbc0679853?w=400&h=200&fit=crop",
     likes: 203,
     comments: 47
   }
 ];
 
-const categories = ["All", "React", "TypeScript", "Node.js", "CSS", "GraphQL", "Vue.js", "DevOps"];
+const categories = ["All", "Digital Art", "Drawing", "Oil Painting", "Abstract", "Sculpture", "Photography", "Mixed Media", "Printmaking"];
 
 const BlogGrid = () => {
   return (
@@ -90,11 +90,11 @@ const BlogGrid = () => {
             <h2 className="text-3xl md:text-4xl font-heading font-bold mb-2">
               Latest
               <span className="bg-gradient-primary bg-clip-text text-transparent ml-3">
-                Adventures
+                Creations
               </span>
             </h2>
             <p className="text-muted-foreground">
-              Fresh content from our developer community
+              Fresh inspiration from our artistic community
             </p>
           </div>
           
@@ -113,7 +113,7 @@ const BlogGrid = () => {
           {categories.map((category, index) => (
             <Button
               key={category}
-              variant={index === 0 ? "gaming" : "outline"}
+              variant={index === 0 ? "default" : "outline"}
               size="sm"
               className="text-sm"
             >
@@ -136,7 +136,7 @@ const BlogGrid = () => {
         {/* Load More */}
         <div className="text-center mt-12">
           <Button variant="outline" size="lg" className="px-8">
-            Load More Epic Content
+            Discover More Art
           </Button>
         </div>
       </div>
